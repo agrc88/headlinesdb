@@ -1,0 +1,12 @@
+#Creating DB in MySQL
+
+CREATE DATABASE npr;
+
+USE npr;
+
+CREATE TABLE headlines (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	headline VARCHAR(255) NOT NULL,
+   	postdate DATE NOT NULL,
+    	scraped TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
